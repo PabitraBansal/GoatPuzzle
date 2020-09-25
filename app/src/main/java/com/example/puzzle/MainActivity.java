@@ -51,7 +51,6 @@ public class MainActivity extends AppCompatActivity {
         int resourceID = context.getResources().getIdentifier("status_bar_height", "dimen", "android");
         if(resourceID>0){
             result = context.getResources().getDimensionPixelSize(resourceID);
-
         }
         return result;
     }
@@ -115,7 +114,6 @@ public class MainActivity extends AppCompatActivity {
         titleList = new String[DIMENSIONS];
         for(int i=0;i<DIMENSIONS;i++){
             titleList[i] = String.valueOf(i);
-
         }
     }
 
@@ -148,12 +146,10 @@ public class MainActivity extends AppCompatActivity {
         if(position==0){
             if(direction.equals("right")){
                 swap(context ,position, 1);
-
             }
             else if(direction.equals(("down"))){
                 swap(context, position,COLUMNS);
             }
-
         }
 
         //Upper center
@@ -205,7 +201,6 @@ public class MainActivity extends AppCompatActivity {
                 if(position<=DIMENSIONS-COLUMNS-1){
                     swap(context,position,COLUMNS);
                 }
-
             }
         }
         //Bottom Left Corner
@@ -246,9 +241,7 @@ public class MainActivity extends AppCompatActivity {
                 swap(context, position,COLUMNS);
             }
         }
-
-
-        }
     }
+}
 
 
